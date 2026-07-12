@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07131f" />
+  <title>Youth Intelligence Institute</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo">
+      <span class="logo-icon"><img src="logo.png" alt="Youth Intelligence logo" /></span>
+      <span>Youth Intelligence</span>
+    </a>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="ResearchTeam.html">Research Team</a></li>
+    </ul>
+    <form id="site-search-form" class="site-search" onsubmit="return false;">
+      <input id="site-search" type="search" placeholder="Search site..." aria-label="Search site" />
+      <div id="site-search-results" class="search-results" aria-hidden="true"></div>
+    </form>
+    <a href="about.html" class="btn btn-primary">Get Involved</a>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="hero-copy">
+        <h1>Researching the future of <span id="typewriter"></span></h1>
+        <p>We are a student-led research organization exploring artificial intelligence, responsible technology, and meaningful community impact through collaboration and publication.</p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Learn More</a>
+          <a href="publications.html" class="btn btn-secondary">Explore Publications</a>
+        </div>
+        <div class="hero-stats">
+          <span class="stat-pill">AI Research Lab</span>
+          <span class="stat-pill">Student-led</span>
+          <span class="stat-pill">Cross-disciplinary</span>
+        </div>
+      </div>
+
+      <div class="tech-art">
+        <span class="art-line line-1"></span>
+        <span class="art-node node-1"></span>
+        <span class="art-line line-2"></span>
+        <span class="art-node node-2"></span>
+        <span class="art-line line-3"></span>
+        <span class="art-node node-3"></span>
+      </div>
+      <div class="terminal-panel">
+        <div class="terminal-top">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">$ initializing research network...</div>
+          <div class="terminal-line">$ loading model ethics stack...</div>
+          <div class="terminal-line">$ syncing interdisciplinary teams...</div>
+          <div class="terminal-line">$ status: <span class="typewriter">online</span></div>
+          <div class="terminal-line">$ next milestone: <span id="terminal-text"></span><span class="cursor"></span></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>We bring together students across disciplines to study AI, share research, and create thoughtful projects that connect technology with the real world.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Our Mission</h3>
+          <p>To empower the next generation to master an AI-driven future through rigorous research, ethical exploration, and community-driven innovation.</p>
+        </article>
+        <article class="card">
+          <h3>What We Do</h3>
+          <p>We investigate the cross-disciplinary impact of artificial intelligence across science, law, and education, publishing youth-led insights on tomorrow's technology.</p>
+        </article>
+        <article class="card">
+          <h3>Why It Matters</h3>
+          <p>Because a world integrated with AI will be built by the youth, making our perspective and responsibility too vital to be left to any other generation alone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-title">
+        <h2>Research Focus Areas</h2>
+        <p>Our work covers AI impact across medicine, computing, educational frameworks, legal ethics, and community STEM initiatives.</p>
+      </div>
+      <div class="grid">
+        <article class="card focus-card focus-healthcare">
+          <h3>AI in Healthcare</h3>
+          <p>Studying applications of AI in diagnostics, public health, and patient-centered innovation.</p>
+        </article>
+        <article class="card focus-card focus-cs">
+          <h3>Computer Science</h3>
+          <p>Exploring the technical impact of AI through machine learning, algorithms, and responsible software development.</p>
+        </article>
+        <article class="card focus-card focus-stem">
+          <h3>STEM & Education</h3>
+          <p>Analyzing the impact of AI on learning while building student engagement with next-gen technology.</p>
+        </article>
+        <article class="card focus-card focus-law">
+          <h3>Law & Ethics</h3>
+          <p>Examining the societal impact of AI through algorithmic fairness, policy, governance, and legal accountability.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications-preview">
+      <div class="section-title">
+        <h2>Publications Library</h2>
+        <p>Browse published research and community STEM projects across our departments.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Department Publications</h3>
+          <p>Access research organized by healthcare, computer science, STEM, law and ethics, and education.</p>
+          <a href="publications.html" class="btn btn-secondary" style="margin-top: 0.9rem;">Open Publications</a>
+        </article>
+        <article class="card">
+          <h3>Community Projects</h3>
+          <p>Explore student-led community STEM work that connects research to public engagement and practical impact.</p>
+          <a href="publications.html" class="btn btn-secondary" style="margin-top: 0.9rem;">View Projects</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="join">
+      <div class="section-title">
+        <h2>Join the Research Team</h2>
+        <p>Interested in contributing to Youth Intelligence research? Apply to become a researcher or review our role requirements.</p>
+      </div>
+      <div class="cta-grid">
+        <article class="card section-panel">
+          <h3>Researcher Application</h3>
+          <p>Ready to contribute? Submit an application to join our research team and work on AI, healthcare, ethics, and STEM projects.</p>
+          <div class="link-row">
+            <a class="btn btn-primary" href="https://forms.gle/vccgReCh9ddGQ9Gm7" target="_blank" rel="noreferrer">Apply Now</a>
+          </div>
+        </article>
+        <article class="card section-panel">
+          <h3>Newsletter & updates</h3>
+          <p>Stay connected with our latest publications, events, and research by subscribing to the Youth Intelligence newsletter.</p>
+          <div class="link-row">
+            <a class="btn btn-primary" href="https://forms.gle/d2MYcQ59AD5DAeYi7" target="_blank" rel="noreferrer">Subscribe</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Youth Intelligence Institute. All rights reserved.</p>
+    <p>Contact: youthintelligenceinstitute@gmail.com</p>
+    <p>Instagram: @theyouthinstitute</p>
+    <p>X: @youthintellecs</p>
+  </footer>
+  <script src="search.js"></script>
+  <script>
+    const phrases = ['AI', 'technology', 'innovation', 'machine learning'];
+    const typewriter = document.getElementById('typewriter');
+    const terminalText = document.getElementById('terminal-text');
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    function tick() {
+      const currentPhrase = phrases[phraseIndex];
+      if (!deleting) {
+        typewriter.textContent = currentPhrase.slice(0, charIndex + 1);
+        if (terminalText) terminalText.textContent = currentPhrase.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentPhrase.length) {
+          deleting = true;
+          setTimeout(tick, 1100);
+          return;
+        }
+      } else {
+        typewriter.textContent = currentPhrase.slice(0, charIndex - 1);
+        if (terminalText) terminalText.textContent = currentPhrase.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          deleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+      }
+      setTimeout(tick, deleting ? 45 : 90);
+    }
+
+    tick();
+  </script>
+</body>
+</html>
