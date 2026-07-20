@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -18,12 +18,15 @@
       <li><a href="publications.html">Publications</a></li>
       <li><a href="ResearchTeam.html">Research Team</a></li>
     </ul>
-    <a href="about.html" class="btn btn-primary">Get Involved</a>
+    <form id="site-search-form" class="site-search" onsubmit="return false;">
+      <input id="site-search" type="search" placeholder="Search site..." aria-label="Search site" />
+      <div id="site-search-results" class="search-results" aria-hidden="true"></div>
+    </form>
   </nav>
 
   <header class="publications-header">
     <h1>Leadership & People</h1>
-    <p>The Youth Intelligence Institute is led by a passionate and driven team of high school and middle school students committed to advancing research and knowledge across a wide range of fields. Our board members and directors bring dedication and leadership to every aspect of the organization — from managing research publications and community outreach to growing our platform and planning youth events. Together, they work to ensure YII remains a space where young minds can contribute meaningful work, collaborate across disciplines, and make a real impact in their communities.</p>
+    <p>The Youth Intelligence Institute is led by a passionate and driven team of high school and middle school students committed to advancing research and knowledge across a wide range of fields. Our board members and directors bring dedication and leadership to every aspect of the organization â€” from managing research publications and community outreach to growing our platform and planning youth events. Together, they work to ensure YII remains a space where young minds can contribute meaningful work, collaborate across disciplines, and make a real impact in their communities.</p>
   </header>
 
   <section>
@@ -47,6 +50,8 @@
         <p>Executive Director of Fundraising</p>
         <p class="meta">sherlynzirou@gmail.com</p>
       </article>
+
+      
       <article class="card">
         <h3>Cade Konishi</h3>
         <p>Director of STEM Research</p>
@@ -81,12 +86,12 @@
       <p>Our wider researcher network supports projects across AI, STEM, education, ethics, and community impact.</p>
     </div>
     <ul class="people-list">
-      <li>Daniella Soto-Rodriguez — sotorodriguezdaniella@gmail.com</li>
-      <li>Jency Nguyen — Jencynguyen12@gmail.com</li>
-      <li>Angela Zhao — angelazhao1218@gmail.com</li>
-      <li>Hanyu Zhang — hanyu4309@gmail.com</li>
-      <li>Kali Bosworth — Kali.bosworth9@gmail.com</li>
-      <li>Giani Powell — Gianipowelln13@gmail.com</li>
+      <li>Daniella Soto-Rodriguez â€” sotorodriguezdaniella@gmail.com</li>
+      <li>Jency Nguyen â€” Jencynguyen12@gmail.com</li>
+      <li>Angela Zhao â€” angelazhao1218@gmail.com</li>
+      <li>Hanyu Zhang â€” hanyu4309@gmail.com</li>
+      <li>Kali Bosworth â€” Kali.bosworth9@gmail.com</li>
+      <li>Giani Powell â€” Gianipowelln13@gmail.com</li>
     </ul>
   </section>
 
@@ -115,9 +120,10 @@
 
   <footer>
     <p>&copy; 2026 Youth Intelligence Institute. All rights reserved.</p>
-    <p>Contact: youthintelligenceinstitute@gmail.com</p>
+    <p>Contact: <a class="obfuscated-email" data-user="etutitsniecnegilletnihtuoy" data-domain="moc.liamg" aria-label="Email youth intelligence institute"></a></p>
     <p>Instagram: @theyouthinstitute</p>
     <p>X: @youthintellecs</p>
   </footer>
 </body>
 </html>
+

@@ -72,7 +72,20 @@ function attachPaperSearch() {
   });
 }
 
+function revealObfuscatedEmails() {
+  document.querySelectorAll('.obfuscated-email').forEach((el) => {
+    const user = (el.dataset.user || '').split('').reverse().join('');
+    const domain = (el.dataset.domain || '').split('').reverse().join('');
+    if (!user || !domain) return;
+    const email = `${user}@${domain}`;
+    el.textContent = email;
+    el.href = `mailto:${email}`;
+    el.setAttribute('aria-label', email);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   attachSiteSearch();
   attachPaperSearch();
+  revealObfuscatedEmails();
 });

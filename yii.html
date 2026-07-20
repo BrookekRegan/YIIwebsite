@@ -10,13 +10,19 @@
 </head>
 <body>
   <nav>
-    <a href="index.html" class="logo">Youth<span>Intelligence</span></a>
+    <a href="index.html" class="logo">
+      <span class="logo-icon"><img src="logo.png" alt="Youth Intelligence logo" /></span>
+      <span>Youth Intelligence</span>
+    </a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="publications.html">Publications</a></li>
     </ul>
-    <a href="#about" class="btn btn-primary">Get Involved</a>
+    <form id="site-search-form" class="site-search" onsubmit="return false;">
+      <input id="site-search" type="search" placeholder="Search site..." aria-label="Search site" />
+      <div id="site-search-results" class="search-results" aria-hidden="true"></div>
+    </form>
   </nav>
 
   <main>
